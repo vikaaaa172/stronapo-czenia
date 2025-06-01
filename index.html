@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Połączenie z urządzeniami</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Połączenie z urządzeniami</h1>
+    <div class="devices">
+      <div class="device">📶 Router</div>
+      <div class="device">💻 Laptop</div>
+      <div class="device">📱 Telefon</div>
+      <div class="device">🖨️ Drukarka</div>
+    </div>
+    <button id="loginBtn">Zaloguj się do routera</button>
+    <div id="loginForm" class="hidden">
+      <h3>Logowanie</h3>
+      <input type="email" placeholder="Wpisz swój Gmail" /><br/>
+      <input type="password" placeholder="Wpisz swoje hasło" /><br/>
+      <button id="submitLogin">Połącz</button>
+    </div>
+    <div id="status" class="hidden"></div>
+    <div id="printerIssue" class="hidden">
+      <p>❌ Drukarka nie działa.</p>
+      <button id="helpBtn">Pomoc</button>
+    </div>
+    <div id="helpForm" class="hidden">
+      <h3>Pomoc techniczna</h3>
+      <input type="text" placeholder="Gdzie mieszkasz?" /><br/>
+      <input type="date" placeholder="Data urodzenia" /><br/>
+      <input type="email" placeholder="Gmail (ponownie)" /><br/>
+      <input type="password" placeholder="Hasło (ponownie)" /><br/>
+      <input type="text" placeholder="Model routera" /><br/>
+      <button onclick="alert('Niestety, problem z drukarką nadal występuje.')">Wyślij</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
